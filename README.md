@@ -71,12 +71,12 @@ ZTAS-VENUS（简称VENUS）是运行在Linux设备上的程序，用于对运行
 
 具体使用方式，请参见[ZTAS-VENUS使用手册](venus/README.md)
 
-#ZTAS-MARS
+# ZTAS-MARS
 ZTAS-MARS(简称MARS)是运行在Linux、Windows、Mac终端上的程序，让域用户通过该程序和数据中心之间的安全隧道，访问数据中心内的授权过的IT服务。
 
 具体使用方式，请参见[ZTAS-MARS使用手册](mars/README.md)
 
-#ZTAS-EARTH
+# ZTAS-EARTH
 ZTAS-EARTH(以下简称EARTH)是运行在Linux服务器上的程序，用于跟MARS终端建立安全隧道，并通过安全隧道，依据安全规则访问数据中心内的IT服务。
 
 具体使用方式，请参见[ZTAS-EARTH使用手册](earth/README.md)
