@@ -170,4 +170,4 @@ export tmp=`sudo ls`
 export target=~/ZTASMars.app/Contents/MacOS/marsapp
 nohup sudo $target >/dev/null 2>&1 &
 ```
-通过上述脚本启动图形化管理程序，可以关掉终端，而让程序主流在系统中。
+通过上述脚本启动图形化管理程序，可以关掉终端，而让程序驻留在系统中。
