@@ -11,7 +11,7 @@ ZTAS-MARS(简称MARS)是运行在Linux、Windows、Mac终端上的程序，让�
 |Linux| amd64|  <font color="green">支持</font>|
 |Linux| arm64| <font color="red">正在开发</font>|
 |Darwin| amd64| <font color="red">正在开发</font>|
-|Darwin| arm64|<font color="red">正在开发</font>|
+|Darwin| arm64|<font color="green">支持</font>|
 
 # 下载和安装
 
@@ -24,12 +24,22 @@ ZTAS-MARS(简称MARS)是运行在Linux、Windows、Mac终端上的程序，让�
 1. 请下载[Linux](linux/mars.zip)程序包，并解压到本地的目录。
 2. 安装libpcap依赖包。安装方式因Linux发行版不同而有所差异。
 
+### MacOS
+1. 请下载[MacOS](darwin/mars.zip)程序包，并解压到本地的目录。
+2. 安装libpcap依赖包。
+
 ## 安装
+在使用之前，需要先注册Mars设备，并在本地创建系统服务。
+
+以下是通过命令行安装：
 1. 以超级管理员权限启动marscli程序。具体方式因操作系统不同而有所差异，在此不详述，程序会进入一个命令行管理界面。
-2. 在命令行管理界面输入login命令，然后输入用户的令牌，完成用户登录，该令牌在MERCURY的用户管理中心可以查看到。
-3. 在命令行管理界面输入reg命令，完成当前用户在当前设备上的注册，生成Mars设备。
-4. 在命令行管理界面输入cd mars命令，进入mars系统服务管理界面。
-5. 输入install命令，完成ztas_marsp2p系统服务的安装。
+2. 在命令行管理界面输入reg命令，然后输入用户的令牌，完成Mars设备注册。
+3. 在命令行管理界面输入login命令，然后输入用户的令牌，完成用户登录，该令牌在MERCURY的用户管理中心可以查看到。
+4. 在命令行管理界面输入reg命令，完成当前用户在当前设备上的注册，生成Mars设备。
+5. 在命令行管理界面输入cd mars命令，进入mars系统服务管理界面。
+6. 输入install命令，完成ztas_marsp2p系统服务的安装。
+
+在Windows和MacOS上，提供了图形化程序marsapp，允许通过图形化界面完成上述设置，再次不再赘述。
 
 # 启动和停止MARS系统服务
 MARS程序下载和安装完成后，会创建一个ztas_marsp2p的系统服务。
@@ -132,3 +142,22 @@ Earth设备部署在数据中心，用于跟Mars设备建立安全隧道，并�
 ![重设令牌](_assets/images/mars-reset.png)
 
 用户输入y后，会重设令牌，并打印新令牌，用户需要将该令牌保存在安全的地方。
+
+# 图形化管理界面MarsApp
+在Windows和MacOS上提供了图形化管理程序。
+
+
+|===操作系统===|===架构===|===图形化程序名称===|
+|-------------|----------|-------------|
+|Windows|amd64|marsapp.exe|
+|MacOS(Darwin)|arm64|ZTASMars.app/Contents/MacOS/marsapp|
+
+注意：上述图形化程序都需要管理员权限，其中：
+* Windows平台，当用户执行程序时候，程序会自动提升
+* MacOS平台，需要在命令行状态，输入如下命令才能正确启动图形化界面：
+
+```
+$sudo ZTASMars.app/Contents/MacOS/marsapp
+```
+
+图形化管理程序启动后，会在系统菜单里出现一个ZTASMars的菜单。
