@@ -161,3 +161,13 @@ $sudo ZTASMars.app/Contents/MacOS/marsapp
 ```
 
 图形化管理程序启动后，会在系统菜单里出现一个ZTASMars的菜单。
+
+建议：
+在MacOS上写一个如下的启动脚本：
+
+```
+export tmp=`sudo ls`
+export target=~/ZTASMars.app/Contents/MacOS/marsapp
+nohup sudo $target >/dev/null 2>&1 &
+```
+通过上述脚本启动图形化管理程序，可以关掉终端，而让程序主流在系统中。
