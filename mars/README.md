@@ -39,7 +39,8 @@ ZTAS-MARS(简称MARS)是运行在Linux、Windows、Mac终端上的程序，让�
 5. 在命令行管理界面输入cd mars命令，进入mars系统服务管理界面。
 6. 输入install命令，完成ztas_marsp2p系统服务的安装。
 
-在Windows和MacOS上，提供了图形化程序marsapp，允许通过图形化界面完成上述设置，再次不再赘述。
+注意：
+* 在MacOS上，marscli程序位于程序包的ZTASMars.app/Contents/MacOS目录下
 
 # 启动和停止MARS系统服务
 MARS程序下载和安装完成后，会创建一个ztas_marsp2p的系统服务。
@@ -150,24 +151,20 @@ Earth设备部署在数据中心，用于跟Mars设备建立安全隧道，并�
 |===操作系统===|===架构===|===图形化程序名称===|
 |-------------|----------|-------------|
 |Windows|amd64|marsapp.exe|
-|MacOS(Darwin)|arm64|ZTASMars.app/Contents/MacOS/marsapp|
+|MacOS(Darwin)|arm64|ZTASMars.app|
 
-注意：上述图形化程序都需要管理员权限，其中：
-* Windows平台，当用户执行程序时候，程序会自动提升
-* MacOS平台，需要在命令行状态，输入如下命令才能正确启动图形化界面：
+## 程序主界面
+当启动MarsApp后，会在系统的状态栏里出现一个图标，图标的菜单如下：
 
-```
-$sudo ZTASMars.app/Contents/MacOS/marsapp
-```
+![MarsApp菜单](_assets/images/marsapp_menu.png)
 
-图形化管理程序启动后，会在系统菜单里出现一个ZTASMars的菜单。
-
-建议：
-在MacOS上写一个如下的启动脚本：
-
-```
-export tmp=`sudo ls`
-export target=~/ZTASMars.app/Contents/MacOS/marsapp
-nohup sudo $target >/dev/null 2>&1 &
-```
-通过上述脚本启动图形化管理程序，可以关掉终端，而让程序驻留在系统中。
+其中：
+* Reg: 用于注册Mars设备
+* Login: 登录用户
+* Info: 显示当前用户的信息(登录后)
+* Services: 显示当前Mars设备能访问的IT服务列表
+* Earth Servers: 显示当前域内各个数据中心的Earth服务器运行状态
+* DNS Records: 显示当前域的私有DNS记录
+* Open: 建立当前Mars设备跟数据中心的安全隧道，使得客户端能访问数据中心内被授权的IT服务
+* Close: 关闭当前Mars设备跟数据中心的安全隧道。
+* Quit: 退出当前程序
