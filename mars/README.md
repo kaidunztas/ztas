@@ -25,7 +25,7 @@ ZTAS-MARS(简称MARS)是运行在Linux、Windows、Mac终端上的程序，让�
 2. 安装libpcap依赖包。安装方式因Linux发行版不同而有所差异。
 
 ### MacOS
-1. 请下载[MacOS](darwin/mars.zip)程序包，并解压到本地的目录。
+1. 请下载[MacOS](darwin/ZTASMars.app.dmg)程序包，并解压到本地的目录。
 2. 安装libpcap依赖包。
 
 ## 安装
