@@ -22,6 +22,7 @@ $./ztas_venusp2p setup
 ![VENUS设置界面](_assets/images/venus-setup-step.png)
 
 在设置界面依次输入Admin Token和Datacenter Name，其中：
+* Boot URI:如果企业/组织部署了私有化的ZTAS-SUN服务，则需要在此输入ZTAS-SUN服务的P2P URL，否则此处填空
 * Admin Token:是域管理员的令牌
 * Datacenter Name: 是数据中心的名称，需要先在MERCURY程序中创建好
 

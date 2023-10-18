@@ -42,6 +42,21 @@ ZTAS-MARS(简称MARS)是运行在Linux、Windows、Mac终端上的程序，让�
 注意：
 * 在MacOS上，marscli程序位于程序包的ZTASMars.app/Contents/MacOS目录下
 
+### 私有化部署设置
+
+如果ZTAS-SUN做了私有化部署，则需要对marscli进行设置。打开命令行窗口，转到程序所在目录，执行如下命令进行设置：
+
+```
+#假定~/ztas/bin是程序所在目录
+cd ~/ztas/bin 
+./marscli setup
+```
+
+程序会提示你输入如下参数：
+
+* Boot URI:如果企业/组织部署了私有化的ZTAS-SUN服务，则需要在此输入ZTAS-SUN服务的P2P URL，否则此处填空
+* User Token: 用户的令牌，管理员在MERCURY中创建的用户的令牌，由16个字符构成
+
 # 启动和停止MARS系统服务
 MARS程序下载和安装完成后，会创建一个ztas_marsp2p的系统服务。
 
@@ -150,7 +165,7 @@ Earth设备部署在数据中心，用于跟Mars设备建立安全隧道，并�
 
 |===操作系统===|===架构===|===图形化程序名称===|
 |-------------|----------|-------------|
-|Windows|amd64|marsapp.exe|
+|Windows|amd64|ZTASMars.exe|
 |MacOS(Darwin)|arm64|ZTASMars.app|
 
 ## 程序主界面

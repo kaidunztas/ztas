@@ -18,6 +18,7 @@ $./ztas_earthp2p earth install
 ![Earth安装](_assets/images/earth-install.png)
 
 其中：
+* Boot URI: 如果企业/组织部署了私有化的ZTAS-SUN服务，则需要在此输入ZTAS-SUN服务的P2P URL，否则此处填空
 * Admin Token：是域管理员的令牌
 * Datacenter Name: EARTH所在的数据中心名称
 * Listen Port: EARTH服务的监听端口，该监听端口是UDP协议
