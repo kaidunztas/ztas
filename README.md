@@ -60,16 +60,16 @@ ZTAS平台由以下系统构成：
 ## 下载和安装
 
 ### Linux
-到[Linux](https://github.com/kaidunztas/ztas-mercury/tree/main/linux) 目录里下载ZIP包，存放于本地，解压即可。
+到[Linux](mercury/linux) 目录里下载ZIP包，存放于本地，解压即可。
 
 ### Windows
-到[Windows](https://github.com/kaidunztas/ztas-mercury/tree/main/windows) 目录里下载ZIP包，存放于本地，解压即可。
+到[Windows](mercury/windows) 目录里下载ZIP包，存放于本地，解压即可。
 
 ### Mac
-到[Mac](https://github.com/kaidunztas/ztas-mercury/tree/main/darwin) 目录里下载ZIP包，存放于本地，解压即可。
+到[Mac](mercury/darwin) 目录里下载ZIP包，存放于本地，解压即可。
 
 ## 用户手册
-[ZTAS-Mercury用户手册](https://github.com/kaidunztas/ztas-mercury#readme)
+[ZTAS-Mercury用户手册](mercury/README.md)
 
 # ZTAS-VENUS
 ZTAS-VENUS（简称VENUS）是运行在Linux设备上的程序，用于对运行在Linux设备上的IT服务会话或者经过Linux设备的IT服务会话进行零信任保护。
