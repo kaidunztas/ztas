@@ -162,5 +162,5 @@ Earth设备部署在数据中心，用于跟Mars设备建立安全隧道，并�
 * Open: 建立当前Mars设备跟数据中心的安全隧道，使得客户端能访问数据中心内被授权的IT服务
 * Close: 关闭当前Mars设备跟数据中心的安全隧道
 * Start: 启动ztas-marsp2p系统服务
-* Stop: 停止ztas- marspp系统服务
+* Stop: 停止ztas- marsp2p系统服务
 * Quit: 退出当前程序
