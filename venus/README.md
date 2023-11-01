@@ -26,6 +26,8 @@ $./ztas_venusp2p setup
 * Admin Token:是域管理员的令牌
 * Datacenter Name: 是数据中心的名称，需要先在MERCURY程序中创建好
 
+设置成功后，会在当前目录下出现一个ztas_venus.ko的内核模块，如果没有该内核模块，请联系平台的开发者。
+
 2. 安装系统服务，打开命令行窗口，转到VENUS程序所在目录，以超级管理员权限执行以下命令：
 ```
 #./ztas_venusp2p service install
@@ -37,13 +39,13 @@ $./ztas_venusp2p setup
 1. 启动ztas_venusp2p服务
 打开命令行窗口，以超级管理员权限执行以下命令：
 ```
-systemct start ztas_venusp2p
+systemctl start ztas_venusp2p
 ```
 
 2. 停止ztas_venusp2p服务
 打开命令行窗口，以超级管理员权限执行以下命令：
 ```
-systemct stop ztas_venusp2p
+systemctl stop ztas_venusp2p
 ```
 
 ## 防火墙设置
